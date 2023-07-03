@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url> <loc>https://gb-template.netlify.com/OkabeRintarouBeta/big-sample-test-4/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://gb-template.netlify.com/OkabeRintarouBeta/big-sample-test-3/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gb-template.netlify.com/OkabeRintarouBeta/big-sample-test-2/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gb-template.netlify.com/OkabeRintarouBeta/big-sample-test-1/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://gb-template.netlify.com/OkabeRintarouBeta/the-fairys-witches-8/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://gb-template.netlify.com/OkabeRintarouBeta/the-fairys-witches-9/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://gb-template.netlify.com/OkabeRintarouBeta/the-fairys-witches-7/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://gb-template.netlify.com/OkabeRintarouBeta/the-fairys-witches-4/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://gb-template.netlify.com/OkabeRintarouBeta/the-fairys-witches-6/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://gb-template.netlify.com/OkabeRintarouBeta/the-fairys-witches-5/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://gb-template.netlify.com/OkabeRintarouBeta/the-fairys-witches-3/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gb-template.netlify.com/OkabeRintarouBeta/the-fairys-witches-2/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gb-template.netlify.com/OkabeRintarouBeta/the-fairys-witches-1/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gb-template.netlify.com/OkabeRintarouBeta/the-butterfly-of-the-edge-2/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -29,8 +20,6 @@
 <url> <loc>https://gb-template.netlify.com/OkabeRintarouBeta/tag/huge/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gb-template.netlify.com/OkabeRintarouBeta/tag/common-tag/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gb-template.netlify.com/OkabeRintarouBeta/tag/common-tag/page/2/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://gb-template.netlify.com/OkabeRintarouBeta/tag/common-tag/page/3/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://gb-template.netlify.com/OkabeRintarouBeta/tag/common-tag/page/4/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gb-template.netlify.com/OkabeRintarouBeta/tag/programming/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gb-template.netlify.com/OkabeRintarouBeta/tag/more-tags/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gb-template.netlify.com/OkabeRintarouBeta/tag/testing/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -44,19 +33,13 @@
 <url> <loc>https://gb-template.netlify.com/OkabeRintarouBeta/tag/tagging/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gb-template.netlify.com/OkabeRintarouBeta/category/moar/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gb-template.netlify.com/OkabeRintarouBeta/category/tech/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://gb-template.netlify.com/OkabeRintarouBeta/category/tech/page/2/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gb-template.netlify.com/OkabeRintarouBeta/category/basic-category/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gb-template.netlify.com/OkabeRintarouBeta/category/basic-category/page/2/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://gb-template.netlify.com/OkabeRintarouBeta/category/basic-category/page/3/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://gb-template.netlify.com/OkabeRintarouBeta/category/basic-category/page/4/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gb-template.netlify.com/OkabeRintarouBeta/category/something/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://gb-template.netlify.com/OkabeRintarouBeta/category/something/page/2/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gb-template.netlify.com/OkabeRintarouBeta/category/test3/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gb-template.netlify.com/OkabeRintarouBeta/category/random/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gb-template.netlify.com/OkabeRintarouBeta/category/another-one/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gb-template.netlify.com/OkabeRintarouBeta/blog/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gb-template.netlify.com/OkabeRintarouBeta/blog/page/2/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://gb-template.netlify.com/OkabeRintarouBeta/blog/page/3/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://gb-template.netlify.com/OkabeRintarouBeta/blog/page/4/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gb-template.netlify.com/OkabeRintarouBeta/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
