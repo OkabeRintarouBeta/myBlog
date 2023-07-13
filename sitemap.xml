@@ -11,10 +11,10 @@
 <url> <loc>https://gb-template.netlify.com/myBlog/the-fallen-time/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gb-template.netlify.com/myBlog/bold-mage/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gb-template.netlify.com/myBlog/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://gb-template.netlify.com/myBlog/contact/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://gb-template.netlify.com/myBlog/search/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gb-template.netlify.com/myBlog/privacy/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gb-template.netlify.com/myBlog/terms/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://gb-template.netlify.com/myBlog/contact/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://gb-template.netlify.com/myBlog/search/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gb-template.netlify.com/myBlog/tag/proxy/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gb-template.netlify.com/myBlog/tag/server/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gb-template.netlify.com/myBlog/tag/data-flow/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>

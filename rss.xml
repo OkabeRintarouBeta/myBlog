@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[El Psy Kongroo]]></title><description><![CDATA[A GatsbyJS Blog Template for blogging purpose.]]></description><link>https://gb-template.netlify.com</link><image><url>https://gb-template.netlify.com/logos/logo-512x512.png</url><title>El Psy Kongroo</title><link>https://gb-template.netlify.com</link></image><generator>Gatsby Blog Template</generator><lastBuildDate>Thu, 13 Jul 2023 01:11:21 GMT</lastBuildDate><atom:link href="https://gb-template.netlify.com/rss.xml" rel="self" type="application/rss+xml"/><copyright><![CDATA[Copyright © 2019-2022 Lam Pham. Unless otherwise noted, all code MIT license.]]></copyright><item><title><![CDATA[[SudoCode]System Design Course p1-5 notes]]></title><description><![CDATA[Components Overview Logical Entities data,database, applications,cache, message queues, interface... Tangible Entities text,image,video.. mongodb,MySQL,... Java,Python... Redis…]]></description><link>https://gb-template.netlify.com/system-design-notes-1-5/</link><guid isPermaLink="false">https://gb-template.netlify.com/system-design-notes-1-5/</guid><category><![CDATA[proxy]]></category><category><![CDATA[server]]></category><category><![CDATA[data flow]]></category><pubDate>Mon, 03 Jul 2023 08:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;components-overview&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#components-overview&quot; aria-label=&quot;components overview permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Components Overview&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[El Psy Kongroo]]></title><description><![CDATA[A GatsbyJS Blog Template for blogging purpose.]]></description><link>https://gb-template.netlify.com</link><image><url>https://gb-template.netlify.com/logos/logo-512x512.png</url><title>El Psy Kongroo</title><link>https://gb-template.netlify.com</link></image><generator>Gatsby Blog Template</generator><lastBuildDate>Thu, 13 Jul 2023 01:24:40 GMT</lastBuildDate><atom:link href="https://gb-template.netlify.com/rss.xml" rel="self" type="application/rss+xml"/><copyright><![CDATA[Copyright © 2019-2022 Lam Pham. Unless otherwise noted, all code MIT license.]]></copyright><item><title><![CDATA[[SudoCode]System Design Course p1-5 notes]]></title><description><![CDATA[Components Overview Logical Entities data,database, applications,cache, message queues, interface... Tangible Entities text,image,video.. mongodb,MySQL,... Java,Python... Redis…]]></description><link>https://gb-template.netlify.com/system-design-notes-1-5/</link><guid isPermaLink="false">https://gb-template.netlify.com/system-design-notes-1-5/</guid><category><![CDATA[proxy]]></category><category><![CDATA[server]]></category><category><![CDATA[data flow]]></category><pubDate>Mon, 03 Jul 2023 08:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Components Overview&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Logical Entities
 &lt;ul&gt;
@@ -14,7 +14,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;quiz&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#quiz&quot; aria-label=&quot;quiz permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Quiz&lt;/h3&gt;
+&lt;h3&gt;Quiz&lt;/h3&gt;
 &lt;p&gt;What are the components that are absolutely necessary to build any kind of system no matter the requirement or the scale or the users. Comment your answers below along with any queries that you may have.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -33,17 +33,12 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;client-server-architecture&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#client-server-architecture&quot; aria-label=&quot;client server architecture permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Client Server Architecture&lt;/h2&gt;
-&lt;h3 id=&quot;client-type&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#client-type&quot; aria-label=&quot;client type permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Client Type&lt;/h3&gt;
+&lt;h2&gt;Client Server Architecture&lt;/h2&gt;
+&lt;h3&gt;Client Type&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;thin client: logic and data on the server(backend) side&lt;/li&gt;
 &lt;/ol&gt;
-&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 354px; &quot;&gt;
-      &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 37.57575757575758%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAIABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAID/9oADAMBAAIQAxAAAAHVppNB/8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQABBQJ//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQAGPwJ//8QAFhAAAwAAAAAAAAAAAAAAAAAAABAR/9oACAEBAAE/IVT/2gAMAwEAAgADAAAAEHPf/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAGBABAQADAAAAAAAAAAAAAAAAAQARcfD/2gAIAQEAAT8QM7hYXN//2Q==&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
-  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;client server basic&quot; title=&quot;client server basic&quot; src=&quot;/myBlog/static/372a44a4b4278a2e50289ed492594c92/6d997/client_server_basic.jpg&quot; srcset=&quot;/myBlog/static/372a44a4b4278a2e50289ed492594c92/e4e7a/client_server_basic.jpg 165w,
-/myBlog/static/372a44a4b4278a2e50289ed492594c92/4f5c6/client_server_basic.jpg 330w,
-/myBlog/static/372a44a4b4278a2e50289ed492594c92/6d997/client_server_basic.jpg 354w&quot; sizes=&quot;(max-width: 354px) 100vw, 354px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
-    &lt;/span&gt;
+&lt;img src=&quot;../images/system_design_youtube/client_server_basic.jpg&quot;&gt;
 e.g. streaming platforms like Netflix
 &lt;ol start=&quot;2&quot;&gt;
 &lt;li&gt;thick client: logic and data on the client side
@@ -52,15 +47,9 @@ e.g. streaming platforms like Netflix
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&quot;structure2-layer-vs-3-layer&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#structure2-layer-vs-3-layer&quot; aria-label=&quot;structure2 layer vs 3 layer permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Structure(2-layer v.s. 3-layer)&lt;/h3&gt;
-&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 660px; &quot;&gt;
-      &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 55.15151515151515%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFAv/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAGppQuXCeD/AP/EABYQAQEBAAAAAAAAAAAAAAAAAAEAIP/aAAgBAQABBQLKt//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAECAQE/AVf/xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAY/Al//xAAZEAEBAQEBAQAAAAAAAAAAAAABABFRIWH/2gAIAQEAAT8hG237C9texnxv/9oADAMBAAIAAwAAABDP7//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAEDAQE/EEf/xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAIAQIBAT8Q1Yf/xAAaEAEAAwEBAQAAAAAAAAAAAAABABExIWGR/9oACAEBAAE/ELVLOQ9kDWPspanbUOihU//Z&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
-  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;client server basic2&quot; title=&quot;client server basic2&quot; src=&quot;/myBlog/static/bbd9b139c54e68072375afeb412ab62b/5ab81/client_server_basic2.jpg&quot; srcset=&quot;/myBlog/static/bbd9b139c54e68072375afeb412ab62b/e4e7a/client_server_basic2.jpg 165w,
-/myBlog/static/bbd9b139c54e68072375afeb412ab62b/4f5c6/client_server_basic2.jpg 330w,
-/myBlog/static/bbd9b139c54e68072375afeb412ab62b/5ab81/client_server_basic2.jpg 660w,
-/myBlog/static/bbd9b139c54e68072375afeb412ab62b/384ed/client_server_basic2.jpg 786w&quot; sizes=&quot;(max-width: 660px) 100vw, 660px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
-    &lt;/span&gt;
-&lt;h3 id=&quot;quiz-1&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#quiz-1&quot; aria-label=&quot;quiz 1 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Quiz&lt;/h3&gt;
+&lt;h3&gt;Structure(2-layer v.s. 3-layer)&lt;/h3&gt;
+&lt;img src=&quot;../images/system_design_youtube/client_server_basic2.jpg&quot;&gt;
+&lt;h3&gt;Quiz&lt;/h3&gt;
 &lt;p&gt;List down the real world use cases when you would choose a thick client architecture over thin client architecture and vice versa. List pros and cons in all scenarios. Can you think of a system which has thick client and thin client and multiple tiers? Also, can servers behave as clients?&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;When I choose thick client over thin client architecture : When a system want to takes care of more computation in the client side and want to relay less on the server side in this scenario we can go for thick client. &lt;br&gt;Example: Ms-Excel, Ms-Paint.&lt;/li&gt;
@@ -89,9 +78,9 @@ e.g. streaming platforms like Netflix
 Thin client example : webserver&lt;br&gt;
 Multi tier example : youtube
 5. Yes, Server can be a client also, because in large enterprise applications not all the apps takes care of computations some may get the other processed/computation result and take care of responsibility to get back to presentation layer.&lt;/p&gt;
-&lt;h2 id=&quot;proxy&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#proxy&quot; aria-label=&quot;proxy permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Proxy&lt;/h2&gt;
+&lt;h2&gt;Proxy&lt;/h2&gt;
 &lt;p&gt;proxy: on one&apos;s behaf&lt;/p&gt;
-&lt;h3 id=&quot;proxy-type&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#proxy-type&quot; aria-label=&quot;proxy type permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Proxy Type&lt;/h3&gt;
+&lt;h3&gt;Proxy Type&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;Forward Proxy
 &lt;ul&gt;
@@ -109,19 +98,11 @@ Multi tier example : youtube
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&quot;quiz-2&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#quiz-2&quot; aria-label=&quot;quiz 2 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Quiz&lt;/h3&gt;
-&lt;h2 id=&quot;data--data-flow&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#data--data-flow&quot; aria-label=&quot;data  data flow permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Data &amp;#x26; Data Flow&lt;/h2&gt;</content:encoded><author>dev@completejavascript.com</author></item><item><title><![CDATA[Backpack Problem]]></title><description><![CDATA[Category 01 Backpack 2D dynamic programming object\weight 0 1 2 object0    object1    object2    object3    dp[i][j] :  the total value when choosing between $0 - i ^{th}$ object…]]></description><link>https://gb-template.netlify.com/backpack-problem/</link><guid isPermaLink="false">https://gb-template.netlify.com/backpack-problem/</guid><category><![CDATA[backpack problem]]></category><category><![CDATA[dynamic programming]]></category><pubDate>Mon, 02 Jul 2018 08:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;category&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#category&quot; aria-label=&quot;category permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Category&lt;/h2&gt;
-&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 660px; &quot;&gt;
-      &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 34.54545454545455%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsTAAALEwEAmpwYAAABEUlEQVQoz01Q2a6EIBTz/z9zEkdHUJBFNrE3PblM5qGpYOg2tdZwniestcLOORzHAa01SimC67qE+f/z+cA7hzsltBBw54z7vr+YcikIMSLn/EWMUURSSjDGiEkIQUy2bcOhNar3KOeJ7Byo0YcgnZmID5mS3wMUoWitFWxCI97TbCRigFIrHgB375jSe0EMQR4Qo+6+7yJIJlhXbRvm9xu7UqjHgaIUgtbw+45kjEwwNWvFqfeO53nk4bquWJZFhJmaZ/JIGJxDZV1jkKxF9h4PU18XJsb8HZUppUYpIqCUwuv1EuaZE0TupzWudcXtHFrvMNaiccNfsQGmHWBtinnvZUtBKWgxojiH/r/xPM/CfwCOHHki+A1pAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
-  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;category&quot; title=&quot;category&quot; src=&quot;/myBlog/static/79a530037716def50178945a56d1cbb8/7c811/category.png&quot; srcset=&quot;/myBlog/static/79a530037716def50178945a56d1cbb8/103f2/category.png 165w,
-/myBlog/static/79a530037716def50178945a56d1cbb8/748ba/category.png 330w,
-/myBlog/static/79a530037716def50178945a56d1cbb8/7c811/category.png 660w,
-/myBlog/static/79a530037716def50178945a56d1cbb8/d28e0/category.png 990w,
-/myBlog/static/79a530037716def50178945a56d1cbb8/bb51b/category.png 1320w,
-/myBlog/static/79a530037716def50178945a56d1cbb8/1f3e9/category.png 2074w&quot; sizes=&quot;(max-width: 660px) 100vw, 660px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
-    &lt;/span&gt;
-&lt;h2 id=&quot;01-backpack&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#01-backpack&quot; aria-label=&quot;01 backpack permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;01 Backpack&lt;/h2&gt;
-&lt;h3 id=&quot;2d-dynamic-programming&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2d-dynamic-programming&quot; aria-label=&quot;2d dynamic programming permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2D dynamic programming&lt;/h3&gt;
+&lt;h3&gt;Quiz&lt;/h3&gt;
+&lt;h2&gt;Data &amp;#x26; Data Flow&lt;/h2&gt;</content:encoded><author>dev@completejavascript.com</author></item><item><title><![CDATA[Backpack Problem]]></title><description><![CDATA[Category 01 Backpack 2D dynamic programming object\weight 0 1 2 object0    object1    object2    object3    dp[i][j] :  the total value when choosing between  object, reaching…]]></description><link>https://gb-template.netlify.com/backpack-problem/</link><guid isPermaLink="false">https://gb-template.netlify.com/backpack-problem/</guid><category><![CDATA[backpack problem]]></category><category><![CDATA[dynamic programming]]></category><pubDate>Mon, 02 Jul 2018 08:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Category&lt;/h2&gt;
+&lt;img src=&quot;../images/leetcode/backpack/category.png&quot;&gt;
+&lt;h2&gt;01 Backpack&lt;/h2&gt;
+&lt;h3&gt;2D dynamic programming&lt;/h3&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -158,12 +139,12 @@ Multi tier example : youtube
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;dp[i][j] :  the total value when choosing between $0 - i ^{th}$ object, reaching weight j&lt;/p&gt;
-&lt;p&gt;$$dp[i][j]=max(dp[i-1][j],dp[i-1][j-weight[i]]+value[i])$$&lt;/p&gt;
+&lt;p&gt;dp[i][j] :  the total value when choosing between &lt;span class=&quot;math math-inline&quot;&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;mo&gt;−&lt;/mo&gt;&lt;msup&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mrow&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mi&gt;h&lt;/mi&gt;&lt;/mrow&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;0 - i ^{th}&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.7278em;vertical-align:-0.0833em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2222em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mbin&quot;&gt;−&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2222em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.8491em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.8491em;&quot;&gt;&lt;span style=&quot;top:-3.063em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;&lt;span class=&quot;mord mathnormal mtight&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;mord mathnormal mtight&quot;&gt;h&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; object, reaching weight j&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math math-inline&quot;&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;p&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;[&lt;/mo&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;]&lt;/mo&gt;&lt;mo stretchy=&quot;false&quot;&gt;[&lt;/mo&gt;&lt;mi&gt;j&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;]&lt;/mo&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;p&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;[&lt;/mo&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mo&gt;−&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo stretchy=&quot;false&quot;&gt;]&lt;/mo&gt;&lt;mo stretchy=&quot;false&quot;&gt;[&lt;/mo&gt;&lt;mi&gt;j&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;]&lt;/mo&gt;&lt;mo separator=&quot;true&quot;&gt;,&lt;/mo&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;p&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;[&lt;/mo&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mo&gt;−&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo stretchy=&quot;false&quot;&gt;]&lt;/mo&gt;&lt;mo stretchy=&quot;false&quot;&gt;[&lt;/mo&gt;&lt;mi&gt;j&lt;/mi&gt;&lt;mo&gt;−&lt;/mo&gt;&lt;mi&gt;w&lt;/mi&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mi&gt;g&lt;/mi&gt;&lt;mi&gt;h&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;[&lt;/mo&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;]&lt;/mo&gt;&lt;mo stretchy=&quot;false&quot;&gt;]&lt;/mo&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mi&gt;v&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;l&lt;/mi&gt;&lt;mi&gt;u&lt;/mi&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;[&lt;/mo&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;]&lt;/mo&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;dp[i][j]=max(dp[i-1][j],dp[i-1][j-weight[i]]+value[i])&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1em;vertical-align:-0.25em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;mopen&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;mclose&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;mopen&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.05724em;&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;mclose&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2778em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1em;vertical-align:-0.25em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;ma&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;mopen&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;mopen&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2222em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mbin&quot;&gt;−&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2222em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1em;vertical-align:-0.25em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mclose&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;mopen&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.05724em;&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;mclose&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;mpunct&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.1667em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;mopen&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2222em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mbin&quot;&gt;−&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2222em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1em;vertical-align:-0.25em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mclose&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;mopen&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.05724em;&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2222em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mbin&quot;&gt;−&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2222em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1em;vertical-align:-0.25em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.02691em;&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.03588em;&quot;&gt;g&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;mopen&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;mclose&quot;&gt;]]&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2222em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mbin&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2222em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1em;vertical-align:-0.25em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.03588em;&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.01968em;&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;u&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;mopen&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;mclose&quot;&gt;])&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Boundary Cases
 &lt;ol&gt;
-&lt;li&gt;no weight, traverse till the $i^{th}$ object&lt;/li&gt;
+&lt;li&gt;no weight, traverse till the &lt;span class=&quot;math math-inline&quot;&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msup&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mrow&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mi&gt;h&lt;/mi&gt;&lt;/mrow&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;i^{th}&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.8491em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.8491em;&quot;&gt;&lt;span style=&quot;top:-3.063em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;&lt;span class=&quot;mord mathnormal mtight&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;mord mathnormal mtight&quot;&gt;h&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; object&lt;/li&gt;
 &lt;li&gt;only the 0th object
 &lt;ol&gt;
 &lt;li&gt;when j&amp;#x3C;weight[0], dp[0][j]=0&lt;/li&gt;
@@ -182,23 +163,25 @@ Multi tier example : youtube
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Sample Code
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;c++&quot;&gt;&lt;pre class=&quot;language-c++&quot;&gt;&lt;code class=&quot;language-c++&quot;&gt; for(int i = 1; i &amp;lt; weight.size(); i++) {
-   for(int j = 0; j &amp;lt;= bagweight; j++) {
-       if (j &amp;lt; weight[i]) dp[i][j] = dp[i - 1][j];
+&lt;pre&gt;&lt;code class=&quot;language-C++&quot;&gt; for(int i = 1; i &amp;#x3C; weight.size(); i++) {
+   for(int j = 0; j &amp;#x3C;= bagweight; j++) {
+       if (j &amp;#x3C; weight[i]) dp[i][j] = dp[i - 1][j];
        else dp[i][j] = max(dp[i - 1][j], dp[i - 1][j - weight[i]] + value[i]);
    }
- }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+ }
+&lt;/code&gt;&lt;/pre&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&quot;1d-dynamic-programming&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1d-dynamic-programming&quot; aria-label=&quot;1d dynamic programming permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1D Dynamic Programming&lt;/h3&gt;
+&lt;h3&gt;1D Dynamic Programming&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;Boundary Case:none, just initialize dp[i]=0&lt;/li&gt;
 &lt;li&gt;Code
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;c++&quot;&gt;&lt;pre class=&quot;language-c++&quot;&gt;&lt;code class=&quot;language-c++&quot;&gt; for(int i = 0; i &amp;lt; weight.size(); i++) {
-   for(int j = bagWeight; j &amp;gt;= weight[i]; j--) {
+&lt;pre&gt;&lt;code class=&quot;language-C++&quot;&gt; for(int i = 0; i &amp;#x3C; weight.size(); i++) {
+   for(int j = bagWeight; j &gt;= weight[i]; j--) {
        dp[j] = max(dp[j], dp[j - weight[i]] + value[i]);
    }
- }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+ }
+&lt;/code&gt;&lt;/pre&gt;
 &lt;ul&gt;
 &lt;li&gt;Notice that bag weight is traversed in reverse order, this could make sure that each item is only used for one time.&lt;/li&gt;
 &lt;li&gt;Can we reverse the order of objects and bag weight?
@@ -210,18 +193,18 @@ Multi tier example : youtube
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&quot;example-problems&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#example-problems&quot; aria-label=&quot;example problems permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Example Problems&lt;/h3&gt;
-&lt;h4 id=&quot;416-partition-equal-subset-sum&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#416-partition-equal-subset-sum&quot; aria-label=&quot;416 partition equal subset sum permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;416. Partition Equal Subset Sum&lt;/h4&gt;
+&lt;h3&gt;Example Problems&lt;/h3&gt;
+&lt;h4&gt;416. Partition Equal Subset Sum&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/partition-equal-subset-sum/description/&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&quot;1049-last-stone-weight-ii&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1049-last-stone-weight-ii&quot; aria-label=&quot;1049 last stone weight ii permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1049. Last Stone Weight II&lt;/h4&gt;
+&lt;h4&gt;1049. Last Stone Weight II&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/last-stone-weight-ii/&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Take both value and weight to be stone weight&lt;/li&gt;
 &lt;li&gt;Try to split the stones to two parts with the closest weight sum(value)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&quot;474-ones-and-zeros&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#474-ones-and-zeros&quot; aria-label=&quot;474 ones and zeros permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;474. Ones and Zeros&lt;/h4&gt;
+&lt;h4&gt;474. Ones and Zeros&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/ones-and-zeroes/&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&quot;494-target-sum&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#494-target-sum&quot; aria-label=&quot;494 target sum permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;494. Target Sum&lt;/h4&gt;
+&lt;h4&gt;494. Target Sum&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/target-sum/&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;HINT;
@@ -230,7 +213,7 @@ Multi tier example : youtube
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;complete-backpack&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#complete-backpack&quot; aria-label=&quot;complete backpack permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Complete Backpack&lt;/h2&gt;
+&lt;h2&gt;Complete Backpack&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Different from 01 backpack, each item could be used for many times.&lt;/p&gt;
@@ -238,20 +221,21 @@ Multi tier example : youtube
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Code&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;c++&quot;&gt;&lt;pre class=&quot;language-c++&quot;&gt;&lt;code class=&quot;language-c++&quot;&gt;for(int i = 0; i &amp;lt; weight.size(); i++) { 
-  for(int j = weight[i]; j &amp;lt;= bagWeight ; j++) {
+&lt;pre&gt;&lt;code class=&quot;language-C++&quot;&gt;for(int i = 0; i &amp;#x3C; weight.size(); i++) { 
+  for(int j = weight[i]; j &amp;#x3C;= bagWeight ; j++) {
       dp[j] = max(dp[j], dp[j - weight[i]] + value[i]);
   }
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+}
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;The order for two for-loops could switch&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</content:encoded><author>dev@completejavascript.com</author></item><item><title><![CDATA[Big Test 1]]></title><description><![CDATA[This is intended as a quick reference and showcase. For more complete info, see John Gruber's original spec and the Github-flavored Markdown info page. NOTE: This "post" is based…]]></description><link>https://gb-template.netlify.com/big-sample-test-1/</link><guid isPermaLink="false">https://gb-template.netlify.com/big-sample-test-1/</guid><category><![CDATA[test]]></category><category><![CDATA[huge]]></category><category><![CDATA[common tag]]></category><pubDate>Sun, 01 Jul 2018 08:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This is intended as a quick reference and showcase. For more complete info, see &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;John Gruber&apos;s original spec&lt;/a&gt; and the &lt;a href=&quot;http://github.github.com/github-flavored-markdown/&quot;&gt;Github-flavored Markdown info page&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;note-this-post-is-based-on-markdown-cheatsheet-and-is-meant-to-test-styling-of-markdown-generated-documents&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#note-this-post-is-based-on-markdown-cheatsheet-and-is-meant-to-test-styling-of-markdown-generated-documents&quot; aria-label=&quot;note this post is based on markdown cheatsheet and is meant to test styling of markdown generated documents permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;NOTE: This &quot;post&quot; is based on &lt;a href=&quot;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&quot;&gt;Markdown Cheatsheet&lt;/a&gt; and is meant to test styling of Markdown generated documents.&lt;/h2&gt;
+&lt;h2&gt;NOTE: This &quot;post&quot; is based on &lt;a href=&quot;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&quot;&gt;Markdown Cheatsheet&lt;/a&gt; and is meant to test styling of Markdown generated documents.&lt;/h2&gt;
 &lt;p&gt;This is intended as a quick reference and showcase. For more complete info, see &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;John Gruber&apos;s original spec&lt;/a&gt; and the &lt;a href=&quot;http://github.github.com/github-flavored-markdown/&quot;&gt;Github-flavored Markdown info page&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;This cheatsheet is specifically &lt;em&gt;Markdown Here&apos;s&lt;/em&gt; version of Github-flavored Markdown. This differs slightly in styling and syntax from what Github uses, so what you see below might vary a little from what you get in a &lt;em&gt;Markdown Here&lt;/em&gt; email, but it should be pretty close.&lt;/p&gt;
 &lt;p&gt;You can play around with Markdown on our &lt;a href=&quot;http://www.markdown-here.com/livedemo.html&quot;&gt;live demo page&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;(If you&apos;re not a Markdown Here user, check out the &lt;a href=&quot;./Markdown-Cheatsheet&quot;&gt;Markdown Cheatsheet&lt;/a&gt; that is not specific to MDH. But, really, you should also use Markdown Here, because it&apos;s awesome. &lt;a href=&quot;http://markdown-here.com&quot;&gt;http://markdown-here.com&lt;/a&gt;)&lt;/p&gt;
-&lt;h5 id=&quot;table-of-contents&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#table-of-contents&quot; aria-label=&quot;table of contents permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Table of Contents&lt;/h5&gt;
+&lt;h5&gt;Table of Contents&lt;/h5&gt;
 &lt;p&gt;&lt;a href=&quot;#headers&quot;&gt;Headers&lt;/a&gt;
 &lt;a href=&quot;#emphasis&quot;&gt;Emphasis&lt;/a&gt;
 &lt;a href=&quot;#lists&quot;&gt;Lists&lt;/a&gt;
@@ -265,8 +249,8 @@ Multi tier example : youtube
 &lt;a href=&quot;#lines&quot;&gt;Line Breaks&lt;/a&gt;
 &lt;a href=&quot;#videos&quot;&gt;YouTube Videos&lt;/a&gt;&lt;/p&gt;
 &lt;a name=&quot;headers&quot;/&gt;
-&lt;h2 id=&quot;headers&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#headers&quot; aria-label=&quot;headers permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Headers&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;no-highlight&quot;&gt;&lt;pre class=&quot;language-no-highlight&quot;&gt;&lt;code class=&quot;language-no-highlight&quot;&gt;# H1
+&lt;h2&gt;Headers&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-no-highlight&quot;&gt;# H1
 ## H2
 ### H3
 #### H4
@@ -279,35 +263,37 @@ Alt-H1
 ======
 
 Alt-H2
-------&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h1 id=&quot;h1&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#h1&quot; aria-label=&quot;h1 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;H1&lt;/h1&gt;
-&lt;h2 id=&quot;h2&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#h2&quot; aria-label=&quot;h2 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;H2&lt;/h2&gt;
-&lt;h3 id=&quot;h3&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#h3&quot; aria-label=&quot;h3 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;H3&lt;/h3&gt;
-&lt;h4 id=&quot;h4&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#h4&quot; aria-label=&quot;h4 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;H4&lt;/h4&gt;
-&lt;h5 id=&quot;h5&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#h5&quot; aria-label=&quot;h5 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;H5&lt;/h5&gt;
-&lt;h6 id=&quot;h6&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#h6&quot; aria-label=&quot;h6 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;H6&lt;/h6&gt;
+------
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1&gt;H1&lt;/h1&gt;
+&lt;h2&gt;H2&lt;/h2&gt;
+&lt;h3&gt;H3&lt;/h3&gt;
+&lt;h4&gt;H4&lt;/h4&gt;
+&lt;h5&gt;H5&lt;/h5&gt;
+&lt;h6&gt;H6&lt;/h6&gt;
 &lt;p&gt;Alternatively, for H1 and H2, an underline-ish style:&lt;/p&gt;
-&lt;h1 id=&quot;alt-h1&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#alt-h1&quot; aria-label=&quot;alt h1 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Alt-H1&lt;/h1&gt;
-&lt;h2 id=&quot;alt-h2&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#alt-h2&quot; aria-label=&quot;alt h2 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Alt-H2&lt;/h2&gt;
+&lt;h1&gt;Alt-H1&lt;/h1&gt;
+&lt;h2&gt;Alt-H2&lt;/h2&gt;
 &lt;a name=&quot;emphasis&quot;/&gt;
-&lt;h2 id=&quot;emphasis&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#emphasis&quot; aria-label=&quot;emphasis permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Emphasis&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;no-highlight&quot;&gt;&lt;pre class=&quot;language-no-highlight&quot;&gt;&lt;code class=&quot;language-no-highlight&quot;&gt;Emphasis, aka italics, with *asterisks* or _underscores_.
+&lt;h2&gt;Emphasis&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-no-highlight&quot;&gt;Emphasis, aka italics, with *asterisks* or _underscores_.
 
 Strong emphasis, aka bold, with **asterisks** or __underscores__.
 
 Combined emphasis with **asterisks and _underscores_**.
 
-Strikethrough uses two tildes. ~~Scratch this.~~&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+Strikethrough uses two tildes. ~~Scratch this.~~
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Emphasis, aka italics, with &lt;em&gt;asterisks&lt;/em&gt; or &lt;em&gt;underscores&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Strong emphasis, aka bold, with &lt;strong&gt;asterisks&lt;/strong&gt; or &lt;strong&gt;underscores&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Combined emphasis with &lt;strong&gt;asterisks and &lt;em&gt;underscores&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Strikethrough uses two tildes. &lt;del&gt;Scratch this.&lt;/del&gt;&lt;/p&gt;
 &lt;a name=&quot;lists&quot;/&gt;
-&lt;h2 id=&quot;lists&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#lists&quot; aria-label=&quot;lists permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Lists&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;no-highlight&quot;&gt;&lt;pre class=&quot;language-no-highlight&quot;&gt;&lt;code class=&quot;language-no-highlight&quot;&gt;1. First ordered list item
+&lt;h2&gt;Lists&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-no-highlight&quot;&gt;1. First ordered list item
 2. Another item
   * Unordered sub-list.
-1. Actual numbers don&amp;#39;t matter, just that it&amp;#39;s a number
+1. Actual numbers don&apos;t matter, just that it&apos;s a number
   1. Ordered sub-list
 4. And another item.
 
@@ -315,7 +301,8 @@ Strikethrough uses two tildes. ~~Scratch this.~~&lt;/code&gt;&lt;/pre&gt;&lt;/di
 
 * Unordered list can use asterisks
 - Or minuses
-+ Or pluses&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
++ Or pluses
+&lt;/code&gt;&lt;/pre&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;First ordered list item&lt;/p&gt;
@@ -347,25 +334,26 @@ Strikethrough uses two tildes. ~~Scratch this.~~&lt;/code&gt;&lt;/pre&gt;&lt;/di
 &lt;li&gt;Or pluses&lt;/li&gt;
 &lt;/ul&gt;
 &lt;a name=&quot;links&quot;/&gt;
-&lt;h2 id=&quot;links&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#links&quot; aria-label=&quot;links permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Links&lt;/h2&gt;
+&lt;h2&gt;Links&lt;/h2&gt;
 &lt;p&gt;There are two ways to create links.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;no-highlight&quot;&gt;&lt;pre class=&quot;language-no-highlight&quot;&gt;&lt;code class=&quot;language-no-highlight&quot;&gt;[I&amp;#39;m an inline-style link](https://www.google.com)
+&lt;pre&gt;&lt;code class=&quot;language-no-highlight&quot;&gt;[I&apos;m an inline-style link](https://www.google.com)
 
-[I&amp;#39;m a reference-style link][Arbitrary case-insensitive reference text]
+[I&apos;m a reference-style link][Arbitrary case-insensitive reference text]
 
 [You can use numbers for reference-style link definitions][1]
 
 Or leave it empty and use the [link text itself]
 
 URLs and URLs in angle brackets will automatically get turned into links.
-http://www.example.com or &amp;lt;http://www.example.com&amp;gt; and sometimes
+http://www.example.com or &amp;#x3C;http://www.example.com&gt; and sometimes
 example.com (but not on Github, for example).
 
 Some text to show that the reference links can follow later.
 
 [arbitrary case-insensitive reference text]: https://www.mozilla.org
 [1]: http://slashdot.org
-[link text itself]: http://www.reddit.com&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+[link text itself]: http://www.reddit.com
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.google.com&quot;&gt;I&apos;m an inline-style link&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.mozilla.org&quot;&gt;I&apos;m a reference-style link&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://slashdot.org&quot;&gt;You can use numbers for reference-style link definitions&lt;/a&gt;&lt;/p&gt;
@@ -375,26 +363,28 @@ Some text to show that the reference links can follow later.
 example.com (but not on Github, for example).&lt;/p&gt;
 &lt;p&gt;Some text to show that the reference links can follow later.&lt;/p&gt;
 &lt;a name=&quot;images&quot;/&gt;
-&lt;h2 id=&quot;images&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#images&quot; aria-label=&quot;images permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Images&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;no-highlight&quot;&gt;&lt;pre class=&quot;language-no-highlight&quot;&gt;&lt;code class=&quot;language-no-highlight&quot;&gt;Here&amp;#39;s our logo (hover to see the title text):
+&lt;h2&gt;Images&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-no-highlight&quot;&gt;Here&apos;s our logo (hover to see the title text):
 
 Inline-style:
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png &amp;quot;Logo Title Text 1&amp;quot;)
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png &quot;Logo Title Text 1&quot;)
 
 Reference-style:
 ![alt text][logo]
 
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png &amp;quot;Logo Title Text 2&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png &quot;Logo Title Text 2&quot;
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here&apos;s our logo (hover to see the title text):&lt;/p&gt;
 &lt;p&gt;Inline-style:
 &lt;img src=&quot;https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png&quot; alt=&quot;alt text&quot; title=&quot;Logo Title Text 1&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Reference-style:
 &lt;img src=&quot;https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png&quot; alt=&quot;alt text&quot; title=&quot;Logo Title Text 2&quot;&gt;&lt;/p&gt;
 &lt;a name=&quot;code&quot;/&gt;
-&lt;h2 id=&quot;code-and-syntax-highlighting&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#code-and-syntax-highlighting&quot; aria-label=&quot;code and syntax highlighting permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Code and Syntax Highlighting&lt;/h2&gt;
+&lt;h2&gt;Code and Syntax Highlighting&lt;/h2&gt;
 &lt;p&gt;Code blocks are part of the Markdown spec, but syntax highlighting isn&apos;t. However, many renderers -- like Github&apos;s and &lt;em&gt;Markdown Here&lt;/em&gt; -- support syntax highlighting. &lt;em&gt;Markdown Here&lt;/em&gt; supports highlighting for dozens of languages (and not-really-languages, like diffs and HTTP headers); to see the complete list, and how to write the language names, see the &lt;a href=&quot;http://softwaremaniacs.org/media/soft/highlight/test.html&quot;&gt;highlight.js demo page&lt;/a&gt;.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;no-highlight&quot;&gt;&lt;pre class=&quot;language-no-highlight&quot;&gt;&lt;code class=&quot;language-no-highlight&quot;&gt;Inline `code` has `back-ticks around` it.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Inline &lt;code class=&quot;language-text&quot;&gt;code&lt;/code&gt; has &lt;code class=&quot;language-text&quot;&gt;back-ticks around&lt;/code&gt; it.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-no-highlight&quot;&gt;Inline `code` has `back-ticks around` it.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Inline &lt;code&gt;code&lt;/code&gt; has &lt;code&gt;back-ticks around&lt;/code&gt; it.&lt;/p&gt;
 &lt;p&gt;Blocks of code are either fenced by lines with three back-ticks &lt;code&gt;```&lt;/code&gt;, or are indented with four spaces. I recommend only using the fenced code blocks -- they&apos;re easier and only they support syntax highlighting.&lt;/p&gt;
 &lt;pre lang=&quot;no-highlight&quot;&gt;&lt;code&gt;```javascript
 var s = &quot;JavaScript syntax highlighting&quot;;
@@ -411,17 +401,20 @@ No language indicated, so no syntax highlighting.
 But let&apos;s throw in a &amp;lt;b&amp;gt;tag&amp;lt;/b&amp;gt;.
 ```
 &lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; s &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;JavaScript syntax highlighting&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token function&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;s&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;s &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Python syntax highlighting&quot;&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt; s&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;No language indicated, so no syntax highlighting in Markdown Here (varies on Github).
-But let&apos;s throw in a &amp;lt;b&gt;tag&amp;lt;/b&gt;.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;var s = &quot;JavaScript syntax highlighting&quot;;
+alert(s);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;s = &quot;Python syntax highlighting&quot;
+print s
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;No language indicated, so no syntax highlighting in Markdown Here (varies on Github).
+But let&apos;s throw in a &amp;#x3C;b&gt;tag&amp;#x3C;/b&gt;.
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Again, to see what languages are available for highlighting, and how to write those language names, see the &lt;a href=&quot;http://softwaremaniacs.org/media/soft/highlight/test.html&quot;&gt;highlight.js demo page&lt;/a&gt;.&lt;/p&gt;
 &lt;a name=&quot;tables&quot;/&gt;
-&lt;h2 id=&quot;tables&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tables&quot; aria-label=&quot;tables permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Tables&lt;/h2&gt;
+&lt;h2&gt;Tables&lt;/h2&gt;
 &lt;p&gt;Tables aren&apos;t part of the core Markdown spec, but they are part of GFM and &lt;em&gt;Markdown Here&lt;/em&gt; supports them. They are an easy way of adding tables to your email -- a task that would otherwise require copy-pasting from another application.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;no-highlight&quot;&gt;&lt;pre class=&quot;language-no-highlight&quot;&gt;&lt;code class=&quot;language-no-highlight&quot;&gt;Colons can be used to align columns.
+&lt;pre&gt;&lt;code class=&quot;language-no-highlight&quot;&gt;Colons can be used to align columns.
 
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
@@ -429,12 +422,13 @@ But let&apos;s throw in a &amp;lt;b&gt;tag&amp;lt;/b&gt;.&lt;/code&gt;&lt;/pre&g
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
 
-The outer pipes (|) are optional, and you don&amp;#39;t need to make the raw Markdown line up prettily. You can also use inline Markdown.
+The outer pipes (|) are optional, and you don&apos;t need to make the raw Markdown line up prettily. You can also use inline Markdown.
 
 Markdown | Less | Pretty
 --- | --- | ---
 *Still* | `renders` | **nicely**
-1 | 2 | 3&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+1 | 2 | 3
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Colons can be used to align columns.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -474,7 +468,7 @@ Markdown | Less | Pretty
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;em&gt;Still&lt;/em&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;renders&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;renders&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;&lt;strong&gt;nicely&lt;/strong&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -485,13 +479,14 @@ Markdown | Less | Pretty
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;a name=&quot;blockquotes&quot;/&gt;
-&lt;h2 id=&quot;blockquotes&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#blockquotes&quot; aria-label=&quot;blockquotes permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Blockquotes&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;no-highlight&quot;&gt;&lt;pre class=&quot;language-no-highlight&quot;&gt;&lt;code class=&quot;language-no-highlight&quot;&gt;&amp;gt; Blockquotes are very handy in email to emulate reply text.
-&amp;gt; This line is part of the same quote.
+&lt;h2&gt;Blockquotes&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-no-highlight&quot;&gt;&gt; Blockquotes are very handy in email to emulate reply text.
+&gt; This line is part of the same quote.
 
 Quote break.
 
-&amp;gt; This is a very long line that will still be quoted properly when it wraps. Oh boy let&amp;#39;s keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&gt; This is a very long line that will still be quoted properly when it wraps. Oh boy let&apos;s keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote.
+&lt;/code&gt;&lt;/pre&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Blockquotes are very handy in email to emulate reply text.
 This line is part of the same quote.&lt;/p&gt;
@@ -501,15 +496,16 @@ This line is part of the same quote.&lt;/p&gt;
 &lt;p&gt;This is a very long line that will still be quoted properly when it wraps. Oh boy let&apos;s keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can &lt;em&gt;put&lt;/em&gt; &lt;strong&gt;Markdown&lt;/strong&gt; into a blockquote.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;a name=&quot;html&quot;/&gt;
-&lt;h2 id=&quot;inline-html&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#inline-html&quot; aria-label=&quot;inline html permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Inline HTML&lt;/h2&gt;
+&lt;h2&gt;Inline HTML&lt;/h2&gt;
 &lt;p&gt;You can also use raw HTML in your Markdown, and it&apos;ll mostly work pretty well.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;no-highlight&quot;&gt;&lt;pre class=&quot;language-no-highlight&quot;&gt;&lt;code class=&quot;language-no-highlight&quot;&gt;&amp;lt;dl&amp;gt;
-  &amp;lt;dt&amp;gt;Definition list&amp;lt;/dt&amp;gt;
-  &amp;lt;dd&amp;gt;Is something people use sometimes.&amp;lt;/dd&amp;gt;
+&lt;pre&gt;&lt;code class=&quot;language-no-highlight&quot;&gt;&amp;#x3C;dl&gt;
+  &amp;#x3C;dt&gt;Definition list&amp;#x3C;/dt&gt;
+  &amp;#x3C;dd&gt;Is something people use sometimes.&amp;#x3C;/dd&gt;
 
-  &amp;lt;dt&amp;gt;Markdown in HTML&amp;lt;/dt&amp;gt;
-  &amp;lt;dd&amp;gt;Does *not* work **very** well. Use HTML &amp;lt;em&amp;gt;tags&amp;lt;/em&amp;gt;.&amp;lt;/dd&amp;gt;
-&amp;lt;/dl&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+  &amp;#x3C;dt&gt;Markdown in HTML&amp;#x3C;/dt&gt;
+  &amp;#x3C;dd&gt;Does *not* work **very** well. Use HTML &amp;#x3C;em&gt;tags&amp;#x3C;/em&gt;.&amp;#x3C;/dd&gt;
+&amp;#x3C;/dl&gt;
+&lt;/code&gt;&lt;/pre&gt;
 &lt;dl&gt;
   &lt;dt&gt;Definition list&lt;/dt&gt;
   &lt;dd&gt;Is something people use sometimes.&lt;/dd&gt;
@@ -517,8 +513,8 @@ This line is part of the same quote.&lt;/p&gt;
   &lt;dd&gt;Does *not* work **very** well. Use HTML &lt;em&gt;tags&lt;/em&gt;.&lt;/dd&gt;
 &lt;/dl&gt;
 &lt;a name=&quot;hr&quot;/&gt;
-&lt;h2 id=&quot;horizontal-rule&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#horizontal-rule&quot; aria-label=&quot;horizontal rule permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Horizontal Rule&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Three or more...
+&lt;h2&gt;Horizontal Rule&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;Three or more...
 
 ---
 
@@ -530,7 +526,8 @@ Asterisks
 
 ___
 
-Underscores&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+Underscores
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Three or more...&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Hyphens&lt;/p&gt;
@@ -539,33 +536,36 @@ Underscores&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;hr&gt;
 &lt;p&gt;Underscores&lt;/p&gt;
 &lt;a name=&quot;lines&quot;/&gt;
-&lt;h2 id=&quot;line-breaks&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#line-breaks&quot; aria-label=&quot;line breaks permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Line Breaks&lt;/h2&gt;
+&lt;h2&gt;Line Breaks&lt;/h2&gt;
 &lt;p&gt;My basic recommendation for learning how line breaks work is to experiment and discover -- hit &amp;#x3C;Enter&gt; once (i.e., insert one newline), then hit it twice (i.e., insert two newlines), see what happens. You&apos;ll soon learn to get what you want. &quot;Markdown Toggle&quot; is your friend.&lt;/p&gt;
 &lt;p&gt;Here are some things to try out:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Here&apos;s a line for us to start with.
+&lt;pre&gt;&lt;code&gt;Here&apos;s a line for us to start with.
 
 This line is separated from the one above by two newlines, so it will be a *separate paragraph*.
 
 This line is also a separate paragraph, but...
-This line is only separated by a single newline, so it&apos;s a separate line in the *same paragraph*.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+This line is only separated by a single newline, so it&apos;s a separate line in the *same paragraph*.
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here&apos;s a line for us to start with.&lt;/p&gt;
 &lt;p&gt;This line is separated from the one above by two newlines, so it will be a &lt;em&gt;separate paragraph&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;This line is also begins a separate paragraph, but...
 This line is only separated by a single newline, so it&apos;s a separate line in the &lt;em&gt;same paragraph&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;(Technical note: &lt;em&gt;Markdown Here&lt;/em&gt; uses GFM line breaks, so there&apos;s no need to use MD&apos;s two-space line breaks.)&lt;/p&gt;
 &lt;a name=&quot;videos&quot;/&gt;
-&lt;h2 id=&quot;youtube-videos&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#youtube-videos&quot; aria-label=&quot;youtube videos permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;YouTube Videos&lt;/h2&gt;
+&lt;h2&gt;YouTube Videos&lt;/h2&gt;
 &lt;p&gt;They can&apos;t be added directly but you can add an image with a link to the video like this:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;no-highlight&quot;&gt;&lt;pre class=&quot;language-no-highlight&quot;&gt;&lt;code class=&quot;language-no-highlight&quot;&gt;&amp;lt;a href=&amp;quot;http://www.youtube.com/watch?feature=player_embedded&amp;amp;v=8AkLfYOgIrE
-&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;&amp;lt;img src=&amp;quot;http://img.youtube.com/vi/8AkLfYOgIrE/0.jpg&amp;quot;
-alt=&amp;quot;IMAGE ALT TEXT HERE&amp;quot; width=&amp;quot;240&amp;quot; height=&amp;quot;180&amp;quot; border=&amp;quot;10&amp;quot; /&amp;gt;&amp;lt;/a&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;pre&gt;&lt;code class=&quot;language-no-highlight&quot;&gt;&amp;#x3C;a href=&quot;http://www.youtube.com/watch?feature=player_embedded&amp;#x26;v=8AkLfYOgIrE
+&quot; target=&quot;_blank&quot;&gt;&amp;#x3C;img src=&quot;http://img.youtube.com/vi/8AkLfYOgIrE/0.jpg&quot;
+alt=&quot;IMAGE ALT TEXT HERE&quot; width=&quot;240&quot; height=&quot;180&quot; border=&quot;10&quot; /&gt;&amp;#x3C;/a&gt;
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Or, in pure Markdown, but losing the image sizing and border:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;no-highlight&quot;&gt;&lt;pre class=&quot;language-no-highlight&quot;&gt;&lt;code class=&quot;language-no-highlight&quot;&gt;[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded><author>dev@completejavascript.com</author></item><item><title><![CDATA[The Fairy's Witches 2]]></title><description><![CDATA[Lorem markdownum. Dedit caput, saxa lenis adhibere negarunt substiterat et ab
+&lt;pre&gt;&lt;code class=&quot;language-no-highlight&quot;&gt;[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+&lt;/code&gt;&lt;/pre&gt;</content:encoded><author>dev@completejavascript.com</author></item><item><title><![CDATA[The Fairy's Witches 2]]></title><description><![CDATA[Lorem markdownum. Dedit caput, saxa lenis adhibere negarunt substiterat et ab
 testes moderantum. Somno curas obscurum, et regna spectare quaeque tot arte
 Minyeia. Labens Actaeis…]]></description><link>https://gb-template.netlify.com/the-fairys-witches-2/</link><guid isPermaLink="false">https://gb-template.netlify.com/the-fairys-witches-2/</guid><category><![CDATA[common tag]]></category><pubDate>Mon, 03 Apr 2017 08:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Lorem markdownum. Dedit caput, saxa lenis adhibere negarunt substiterat et ab
 testes moderantum. Somno curas obscurum, et &lt;em&gt;regna spectare&lt;/em&gt; quaeque tot arte
 Minyeia. Labens Actaeis potentior et &lt;strong&gt;in visa Arcadiae&lt;/strong&gt; adfusaque et voto.&lt;/p&gt;
-&lt;h2 id=&quot;ait-oculos&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#ait-oculos&quot; aria-label=&quot;ait oculos permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Ait oculos&lt;/h2&gt;
+&lt;h2&gt;Ait oculos&lt;/h2&gt;
 &lt;p&gt;Lorem markdownum. Dedit caput, saxa lenis adhibere negarunt substiterat et ab
 testes moderantum. Somno curas obscurum, et &lt;em&gt;regna spectare&lt;/em&gt; quaeque tot arte
 Minyeia. Labens Actaeis potentior et &lt;strong&gt;in visa Arcadiae&lt;/strong&gt; adfusaque et voto. In
@@ -584,7 +584,7 @@ formae. Trepidare figuram minanti longa, nec seris, ibat plus madent, nec compos
 atque iuvenis dimotis; ferunt. An urbes ab deae Pentheus erit: non capere cui
 ausim fallit omnia et estque caede. Meas haec una ab est iter exstantibus illo
 &lt;em&gt;summae flecti&lt;/em&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;tyrios-inquit&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tyrios-inquit&quot; aria-label=&quot;tyrios inquit permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Tyrios inquit&lt;/h2&gt;
+&lt;h2&gt;Tyrios inquit&lt;/h2&gt;
 &lt;p&gt;Os inquit pensa sidereus: membra nomen superi magicaeque nympha ire &lt;a href=&quot;http://vulnere-riget.com/&quot;&gt;aevum tuus
 et&lt;/a&gt; quid gladios, tuta. Pectore femina candida
 aptumque auras dum!&lt;/p&gt;
@@ -609,7 +609,7 @@ testes moderantum. Somno curas obscurum, et regna spectare quaeque tot arte
 Minyeia. Labens Actaeis…]]></description><link>https://gb-template.netlify.com/the-fairys-witches-1/</link><guid isPermaLink="false">https://gb-template.netlify.com/the-fairys-witches-1/</guid><category><![CDATA[common tag]]></category><pubDate>Sun, 02 Apr 2017 08:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Lorem markdownum. Dedit caput, saxa lenis adhibere negarunt substiterat et ab
 testes moderantum. Somno curas obscurum, et &lt;em&gt;regna spectare&lt;/em&gt; quaeque tot arte
 Minyeia. Labens Actaeis potentior et &lt;strong&gt;in visa Arcadiae&lt;/strong&gt; adfusaque et voto.&lt;/p&gt;
-&lt;h2 id=&quot;ait-oculos&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#ait-oculos&quot; aria-label=&quot;ait oculos permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Ait oculos&lt;/h2&gt;
+&lt;h2&gt;Ait oculos&lt;/h2&gt;
 &lt;p&gt;Lorem markdownum. Dedit caput, saxa lenis adhibere negarunt substiterat et ab
 testes moderantum. Somno curas obscurum, et &lt;em&gt;regna spectare&lt;/em&gt; quaeque tot arte
 Minyeia. Labens Actaeis potentior et &lt;strong&gt;in visa Arcadiae&lt;/strong&gt; adfusaque et voto. In
@@ -628,7 +628,7 @@ formae. Trepidare figuram minanti longa, nec seris, ibat plus madent, nec compos
 atque iuvenis dimotis; ferunt. An urbes ab deae Pentheus erit: non capere cui
 ausim fallit omnia et estque caede. Meas haec una ab est iter exstantibus illo
 &lt;em&gt;summae flecti&lt;/em&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;tyrios-inquit&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tyrios-inquit&quot; aria-label=&quot;tyrios inquit permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Tyrios inquit&lt;/h2&gt;
+&lt;h2&gt;Tyrios inquit&lt;/h2&gt;
 &lt;p&gt;Os inquit pensa sidereus: membra nomen superi magicaeque nympha ire &lt;a href=&quot;http://vulnere-riget.com/&quot;&gt;aevum tuus
 et&lt;/a&gt; quid gladios, tuta. Pectore femina candida
 aptumque auras dum!&lt;/p&gt;
@@ -653,7 +653,7 @@ tardius pello ostentare; dixit. Agit super, cum, qua
 quae pinxit certamine occulte causa: est est non…]]></description><link>https://gb-template.netlify.com/random-project-4-with-super-long-title-phase-one/</link><guid isPermaLink="false">https://gb-template.netlify.com/random-project-4-with-super-long-title-phase-one/</guid><category><![CDATA[say hi]]></category><category><![CDATA[common tag]]></category><pubDate>Thu, 02 Mar 2017 08:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Lorem markdownum supplex. Care ferre nos praemia detestatur oderit vitatumque,
 tardius pello ostentare; dixit. &lt;a href=&quot;http://accessit.net/&quot;&gt;Agit&lt;/a&gt; super, cum, qua
 quae pinxit certamine occulte causa: est est non. Dubita fictumque imagine.&lt;/p&gt;
-&lt;h2 id=&quot;mendaci-pinu-ipsi-nunc&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#mendaci-pinu-ipsi-nunc&quot; aria-label=&quot;mendaci pinu ipsi nunc permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Mendaci pinu ipsi nunc&lt;/h2&gt;
+&lt;h2&gt;Mendaci pinu ipsi nunc&lt;/h2&gt;
 &lt;p&gt;Lorem markdownum supplex. Care ferre nos praemia detestatur oderit vitatumque,
 tardius pello ostentare; dixit. &lt;a href=&quot;http://accessit.net/&quot;&gt;Agit&lt;/a&gt; super, cum, qua
 quae pinxit certamine occulte causa: est est non. Dubita fictumque imagine.&lt;/p&gt;
@@ -665,7 +665,7 @@ Oenopiis longi ore paretur? Sede ore quaedam dumque. Et alti: Tagus vino omnes
 ait dictis &lt;strong&gt;videt vos&lt;/strong&gt;, meus licet bipennem, Acheronte! Fulvae vulneris et
 munus succurritis coma simulacraque amborum semper, insequar quae &lt;strong&gt;simul
 tela&lt;/strong&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;facta-huic-laboras-matris-tandem-scelus&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#facta-huic-laboras-matris-tandem-scelus&quot; aria-label=&quot;facta huic laboras matris tandem scelus permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Facta huic laboras matris tandem scelus&lt;/h2&gt;
+&lt;h2&gt;Facta huic laboras matris tandem scelus&lt;/h2&gt;
 &lt;p&gt;Per praesuta occupat stratum, manuque te femina magni Nelidae. &lt;a href=&quot;http://www.in.io/&quot;&gt;Cauda
 lacrimisque&lt;/a&gt; sua nec quoque &lt;em&gt;prodiga&lt;/em&gt;: more te aera est fas
 ut utrumque omnes, fugae sua Telamone. Scilicet indulgere &lt;em&gt;dat terunt quam&lt;/em&gt;
@@ -677,7 +677,7 @@ inclusa&lt;/strong&gt;, dissiluit hoc malis, &lt;em&gt;simulacra&lt;/em&gt;? Cum
 adpellatque tellus, soror robore sequerere cuspidis quae putares! Mihi solidas
 sed tyranni tecta pennas virgine, unus aufer, &lt;em&gt;Oete&lt;/em&gt; neve femina, vos quid.
 Oscula dignior.&lt;/p&gt;
-&lt;h2 id=&quot;corpore-motae-iam&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#corpore-motae-iam&quot; aria-label=&quot;corpore motae iam permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Corpore motae iam&lt;/h2&gt;
+&lt;h2&gt;Corpore motae iam&lt;/h2&gt;
 &lt;p&gt;Est humum data tardus et movet attrahit ferro
 &lt;a href=&quot;http://soleta.org/lectos&quot;&gt;imperio&lt;/a&gt;. Iam undis veniente et crines faciat
 Melaneus sedebat et vobis. Protinus obstantes Iunoni uni date lumen Appenninus
@@ -693,43 +693,44 @@ rerum? Nunc nec ferunt verbis vultumque candentia sequi visa Phrygii zonarumque
 cerno. Creatos plangente…]]></description><link>https://gb-template.netlify.com/angels-of-mist/</link><guid isPermaLink="false">https://gb-template.netlify.com/angels-of-mist/</guid><category><![CDATA[cheese]]></category><category><![CDATA[other]]></category><category><![CDATA[common tag]]></category><pubDate>Wed, 01 Mar 2017 20:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Lorem markdownum alius, &lt;strong&gt;non voluntas supremaque&lt;/strong&gt;: canes ager cingere quis;
 rerum? Nunc nec ferunt verbis vultumque candentia sequi visa Phrygii &lt;em&gt;zonarumque
 cerno&lt;/em&gt;. Creatos plangente voluptas est nomen opes: nequeo ullus;&lt;/p&gt;
-&lt;h2 id=&quot;mane-oscula-anxia&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#mane-oscula-anxia&quot; aria-label=&quot;mane oscula anxia permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Mane oscula anxia&lt;/h2&gt;
+&lt;h2&gt;Mane oscula anxia&lt;/h2&gt;
 &lt;p&gt;Lorem markdownum alius, &lt;strong&gt;non voluntas supremaque&lt;/strong&gt;: canes ager cingere quis;
 rerum? Nunc nec ferunt verbis vultumque candentia sequi visa Phrygii &lt;em&gt;zonarumque
 cerno&lt;/em&gt;. Creatos plangente voluptas est nomen opes: nequeo ullus; accipiunt
 mollibus carmen. &lt;a href=&quot;http://esse-sertis.net/&quot;&gt;Contigerant&lt;/a&gt; haec Antium latebris
 manus quamquam Erigdupum virgultis debes. Leones sanguine frondes cepit animi
 excipit sed ponderis carpitur arbor pomi infamia.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;    subdirectory&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;video_backlink_jquery &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; plug_d&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;upSku&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;nuiMini&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;spyware&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    property &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; hard &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;tracerouteNetCrop&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;multi&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; xp_byte&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; software_wheel_readme&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;username&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;prebinding&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;kbps&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-        fifo_expansion_ppga &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;io_memory_fi&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;analyst_copyright&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;protocolZifPpc&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-                &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-        website &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; webRibbon&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;httpsArtificialColumn &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;769656&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-        scroll_big&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;perlMysql &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; linkedinHardeningRup&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-        archie &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-        risc&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;ripcording &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; so &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sampling_motion_unicode&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;webCursorImpact&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; hub&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id=&quot;vehi-arcus-quondam-australem-agitabitur-excessitque-coniuge&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#vehi-arcus-quondam-australem-agitabitur-excessitque-coniuge&quot; aria-label=&quot;vehi arcus quondam australem agitabitur excessitque coniuge permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Vehi arcus quondam australem agitabitur excessitque coniuge&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-js&quot;&gt;    subdirectory.video_backlink_jquery = plug_d.upSku.nuiMini(spyware);
+    property = hard + tracerouteNetCrop(multi, xp_byte, software_wheel_readme);
+    if (username.prebinding(kbps)) {
+        fifo_expansion_ppga += io_memory_fi(analyst_copyright(protocolZifPpc,
+                -3));
+        website += webRibbon;
+    }
+    if (httpsArtificialColumn &amp;#x3C; 769656) {
+        scroll_big.perlMysql += linkedinHardeningRup;
+        archie += 3;
+        risc.ripcording = 3;
+    }
+    var so = sampling_motion_unicode(webCursorImpact) + hub;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;Vehi arcus quondam australem agitabitur excessitque coniuge&lt;/h2&gt;
 &lt;p&gt;Celebrant est hausto &lt;em&gt;reperire et&lt;/em&gt; unam &lt;strong&gt;caerulaque&lt;/strong&gt;, lumen que &lt;em&gt;Aeaciden&lt;/em&gt;
 mare primo insignis. Et Persidaque &lt;a href=&quot;http://suas.com/meignem&quot;&gt;tenet&lt;/a&gt;, si centum
 que Iovis, inexspectatus mortalis si vindicet maior! Dryades canaeque, quae
 trabes &lt;em&gt;effundite lacrimas ferax&lt;/em&gt;, suo neve. Hoc postquam misceri melius ille
 vertice frena &lt;em&gt;fratremque quibus&lt;/em&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;tulit-lapis-decore-altis-vidi-solida&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tulit-lapis-decore-altis-vidi-solida&quot; aria-label=&quot;tulit lapis decore altis vidi solida permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Tulit lapis decore altis vidi solida&lt;/h2&gt;
+&lt;h2&gt;Tulit lapis decore altis vidi solida&lt;/h2&gt;
 &lt;p&gt;Templi egreditur genitore parte. Captavit est &lt;em&gt;vicisse filia abesse&lt;/em&gt; quem tibi
 dubie, fit ille mirantia, nymphae mox dumque intentare monstri. Exempla
 uberibus, non &lt;em&gt;res&lt;/em&gt; saevique sic commenta aquis fugit sacris aliquidque totis,
 tamen.&lt;/p&gt;
-&lt;h2 id=&quot;hic-simul-et-tibi-adversam-quaeris-senes&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#hic-simul-et-tibi-adversam-quaeris-senes&quot; aria-label=&quot;hic simul et tibi adversam quaeris senes permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Hic simul et tibi adversam quaeris senes&lt;/h2&gt;
+&lt;h2&gt;Hic simul et tibi adversam quaeris senes&lt;/h2&gt;
 &lt;p&gt;Quae nescio fauces contigit in visus, abstitimus colorem enim ieiuna candescere
 aerane mihi stipite nolle sunt. Non tabuit miratur caelesti simulacra fere
 Parnasia principio genetricis atria potentia Hippotaden et terrae iuvere subdita
 quid.&lt;/p&gt;
-&lt;h2 id=&quot;moderatus-fluctibus-mitibus&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#moderatus-fluctibus-mitibus&quot; aria-label=&quot;moderatus fluctibus mitibus permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Moderatus fluctibus mitibus&lt;/h2&gt;
+&lt;h2&gt;Moderatus fluctibus mitibus&lt;/h2&gt;
 &lt;p&gt;Ille non revelli o dignare, scelus, loqui Solis quid flebam! Terras in Ixione
 temeraria Orphea pectora. Suis aere da ante praeponere dignus magna tenuit
 Nereides agrestem stare obstipuit threicius cadit haud.&lt;/p&gt;
@@ -744,7 +745,7 @@ Inmittite hostem, succinctis insuper lentisciferumque Cerealis
 &lt;a href=&quot;http://et.net/&quot;&gt;Alemoniden&lt;/a&gt; matre decusque vade memor laberis, potentem?&lt;/p&gt;</content:encoded><author>dev@completejavascript.com</author></item><item><title><![CDATA[Birch in the Roses]]></title><description><![CDATA[Lorem markdownum nunc fuerat vulgaris ipse. Profecisse Atridae flumen perit
 huic, non bis, summa retemptat. Praedelassat tollitur parte capiebant lustratum Accipit alto fecerat…]]></description><link>https://gb-template.netlify.com/birch-in-the-roses/</link><guid isPermaLink="false">https://gb-template.netlify.com/birch-in-the-roses/</guid><category><![CDATA[tag]]></category><category><![CDATA[common tag]]></category><pubDate>Wed, 01 Mar 2017 08:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Lorem markdownum nunc fuerat vulgaris ipse. Profecisse Atridae flumen perit
 huic, non bis, summa retemptat. Praedelassat tollitur parte capiebant lustratum&lt;/p&gt;
-&lt;h2 id=&quot;accipit-alto-fecerat-mutato-centauri-haerent-dominoque&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#accipit-alto-fecerat-mutato-centauri-haerent-dominoque&quot; aria-label=&quot;accipit alto fecerat mutato centauri haerent dominoque permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Accipit alto fecerat mutato centauri haerent dominoque&lt;/h2&gt;
+&lt;h2&gt;Accipit alto fecerat mutato centauri haerent dominoque&lt;/h2&gt;
 &lt;p&gt;Lorem markdownum nunc fuerat vulgaris ipse. Profecisse Atridae flumen perit
 huic, non bis, summa retemptat. Praedelassat tollitur parte capiebant lustratum
 hominem loco coniuge quota, nec aura. Cum constiterat, animos sic videre dumque
@@ -754,7 +755,7 @@ altus &lt;strong&gt;de vesper&lt;/strong&gt; membra blanditiis aethera orgia.&lt
 &lt;li&gt;Publica animalia suoque sub&lt;/li&gt;
 &lt;li&gt;Stupet eiusdem paventem meum&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&quot;supersunt-prothoenora-arida-moturaque-fuerit-demissaque-aut&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#supersunt-prothoenora-arida-moturaque-fuerit-demissaque-aut&quot; aria-label=&quot;supersunt prothoenora arida moturaque fuerit demissaque aut permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Supersunt Prothoenora arida moturaque fuerit demissaque aut&lt;/h2&gt;
+&lt;h2&gt;Supersunt Prothoenora arida moturaque fuerit demissaque aut&lt;/h2&gt;
 &lt;p&gt;Hunc adventare duxit lacrimis hospes futurum fecerat inde manus reditum annos,
 fuerat usque foedus mihi, priscum? Amanti tu costis occursu: dentes alios,
 adflabitur poteram. Quaerit regaliter porrigitur coire loquendo modo habet
@@ -764,7 +765,7 @@ praefixaque sumus sanguineaque dentibus, mucrone? Saucius iuvenis sunt.&lt;/p&gt
 Dictaeaque pectora vulnus ligones carinae secutum: artis etiam hunc adde. Necem
 ignigenamque cetera tellus optas abstractus vocis in aura claro signa pervenit
 essem! Turbatque aequora remanet accepit in digitos, refert reus sanguine.&lt;/p&gt;
-&lt;h2 id=&quot;mediis-plura-sono&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#mediis-plura-sono&quot; aria-label=&quot;mediis plura sono permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Mediis plura sono&lt;/h2&gt;
+&lt;h2&gt;Mediis plura sono&lt;/h2&gt;
 &lt;p&gt;Haec dedisset pendens quem exul medios nec fecundus unde, concursibus. Iste in
 superat, omnem cognovit nulla inpendere in silvae certatim.&lt;/p&gt;
 &lt;ol&gt;
@@ -775,7 +776,7 @@ superat, omnem cognovit nulla inpendere in silvae certatim.&lt;/p&gt;
 &lt;li&gt;In plura dubitat&lt;/li&gt;
 &lt;li&gt;Vivit doceri et rexerit atque&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&quot;venisse-qui-fortis-nimis-horruit-ignarus-quaeque&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#venisse-qui-fortis-nimis-horruit-ignarus-quaeque&quot; aria-label=&quot;venisse qui fortis nimis horruit ignarus quaeque permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Venisse qui fortis nimis horruit ignarus quaeque&lt;/h2&gt;
+&lt;h2&gt;Venisse qui fortis nimis horruit ignarus quaeque&lt;/h2&gt;
 &lt;p&gt;Caede rursus rostro unumque inscribit Musae; fuit hoc manibusque aestus,
 concrescere retro &lt;strong&gt;tosta&lt;/strong&gt;, non. Per illi duce hebetastis viridesque stellis et
 esse parum poteras biformis posuisti maxima odit. Praedam detruncatque iuvat
@@ -786,20 +787,21 @@ erat insignia virginei medi. Acervo ferrum! Undecimus rabiemque elusam superesse
 inter Cynthia est gemitu crimina sis, et preces cuncta tamen?&lt;/p&gt;</content:encoded><author>dev@completejavascript.com</author></item><item><title><![CDATA[The Fallen Time]]></title><description><![CDATA[Lorem markdownum huc suo ara, dubites celeri mihi bicolor. Secuti non? Suo opus
 quales dant, puppim hanc! Hoc domum solitos veteremque nostrum Lorem markdownum huc suo ara, dubites…]]></description><link>https://gb-template.netlify.com/the-fallen-time/</link><guid isPermaLink="false">https://gb-template.netlify.com/the-fallen-time/</guid><category><![CDATA[test]]></category><category><![CDATA[something]]></category><category><![CDATA[tagging]]></category><category><![CDATA[common tag]]></category><pubDate>Wed, 01 Feb 2017 08:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Lorem markdownum huc suo ara, dubites celeri mihi bicolor. Secuti non? Suo opus
 quales dant, puppim hanc!&lt;/p&gt;
-&lt;h2 id=&quot;hoc-domum-solitos-veteremque-nostrum&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#hoc-domum-solitos-veteremque-nostrum&quot; aria-label=&quot;hoc domum solitos veteremque nostrum permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Hoc domum solitos veteremque nostrum&lt;/h2&gt;
+&lt;h2&gt;Hoc domum solitos veteremque nostrum&lt;/h2&gt;
 &lt;p&gt;Lorem markdownum huc suo ara, dubites celeri mihi bicolor. Secuti non? Suo opus
 quales dant, puppim hanc!&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;    enterprise &lt;span class=&quot;token operator&quot;&gt;/=&lt;/span&gt; mp_operating_quad&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    dsl_runtime&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;wired_horizontal_jquery &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;vramUs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;64389&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; aix &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; socialSector &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt;
-            quad&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-        flaming &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-        infotainment&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;horseThreadColumn&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;copySnippet&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; day&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-        num_network_cpa &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; firewireAluExbibyte &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; denial_virtual_logic &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; program&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;token function&quot;&gt;scanner&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;ram_wddm&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;map&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; reader &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; ole_install&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id=&quot;in-nunc&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#in-nunc&quot; aria-label=&quot;in nunc permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;In nunc&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-js&quot;&gt;    enterprise /= mp_operating_quad;
+    dsl_runtime.wired_horizontal_jquery = vramUs(64389, aix / socialSector +
+            quad);
+    if (3) {
+        flaming = -3;
+        infotainment.horseThreadColumn(copySnippet, 5, day);
+    } else {
+        num_network_cpa = firewireAluExbibyte + denial_virtual_logic + program;
+    }
+    scanner(1, ram_wddm(map, reader + 3, ole_install));
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;In nunc&lt;/h2&gt;
 &lt;p&gt;Superinposita dira me Iove, lanigeris tendunt! Illis gladii, in pignusque dixit
 trisulcis latices. Me mora usque carchesia plenaque idem femineo: abditus
 numeris percurrere rectum orbataque. Lucibus nocuisse et nova attactu et secura,
@@ -810,11 +812,11 @@ iterum: et nisi victa quietis litore? Cera sistere publica &lt;strong&gt;infelix
 harundinibus&lt;/strong&gt; quam ad et, deos iacent, &lt;strong&gt;hunc tulit&lt;/strong&gt;, spicula, natantes!
 Melioribus imperat fugit &lt;em&gt;me natum&lt;/em&gt; quem sequitur nocturnae moras tantummodo et
 secus aethera umentes vidisse terrae sororum laboris, fraterno.&lt;/p&gt;
-&lt;h2 id=&quot;perpetiar-lacrimas-non-dare&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#perpetiar-lacrimas-non-dare&quot; aria-label=&quot;perpetiar lacrimas non dare permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Perpetiar lacrimas Non dare&lt;/h2&gt;
+&lt;h2&gt;Perpetiar lacrimas Non dare&lt;/h2&gt;
 &lt;p&gt;Tibi ducit incursu nomina terrae, feratur satis Telethusa corpore Eurynome in
 semina adiecit! Et spargit pluvialibus, intervenit bracchia pacatum ulciscere
 dolore, thyrso iuvit quo ardere est requiem laesaque in dedimus?&lt;/p&gt;
-&lt;h2 id=&quot;est-in-sit-suos-fessa&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#est-in-sit-suos-fessa&quot; aria-label=&quot;est in sit suos fessa permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Est in sit suos fessa&lt;/h2&gt;
+&lt;h2&gt;Est in sit suos fessa&lt;/h2&gt;
 &lt;p&gt;Est illo Osiris aevo, et &lt;strong&gt;dextrae&lt;/strong&gt; quoque et, illa. Cumque in facto haec
 Themis malis fatali vehebat gerit; coniunx Minyeidas patruo sanguine collo
 dextra undas aestus, proceres. Falso ut relictas me ara illa &lt;em&gt;expulit&lt;/em&gt;
@@ -822,24 +824,25 @@ praebentem tanto dubiis anguiferumque. Fata vidit &lt;a href=&quot;http://nare.i
 mirere&lt;/a&gt; serpentibus tibi propositumque vestes capillis
 natalibus, fitque! Verba Siphnon, arcanaque vicina, Cycnum mox suos coniunx
 ebrius.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;hsf&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; artMetalMeme&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;yottabytePrimary&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;circuit&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-        saas&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;backbone &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; netmaskUtf&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-        engineNybble&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;crtSdram &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; link_icq&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;token function&quot;&gt;whitelist_youtube_search&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;botnet_w_dma&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;raidBurn&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; wavelengthBalancing&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-                &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-        dithering_printer_so&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;toggle_right&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-    modifierDaemonOpen &lt;span class=&quot;token operator&quot;&gt;*=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;video&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;touchscreen_speed&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;692730&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; sound_lion_finder&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-            nanometer_variable &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;of&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;ldap&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; recursion_pop_zebibyte&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; c&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;popCrossplatformVdsl&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-        thunderboltMnemonic &lt;span class=&quot;token operator&quot;&gt;-=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;lte&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;648733&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-        ddr_spoofing &lt;span class=&quot;token operator&quot;&gt;*=&lt;/span&gt; metal_commercial &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; http&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-        leafPowerBar &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; spoolPower&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-        file_itunes &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; dataLifo&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-    binary &lt;span class=&quot;token operator&quot;&gt;*=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;    if (hsf(-3) &gt; artMetalMeme.yottabytePrimary(circuit, 1)) {
+        saas.backbone += netmaskUtf;
+    } else {
+        engineNybble.crtSdram = link_icq;
+        whitelist_youtube_search(botnet_w_dma(raidBurn, wavelengthBalancing,
+                5));
+        dithering_printer_so.file(toggle_right);
+    }
+    modifierDaemonOpen *= video(touchscreen_speed(692730), sound_lion_finder,
+            nanometer_variable + of(ldap, recursion_pop_zebibyte, c));
+    if (popCrossplatformVdsl) {
+        thunderboltMnemonic -= 2 - lte(648733);
+        ddr_spoofing *= metal_commercial + http;
+    } else {
+        leafPowerBar = spoolPower;
+        file_itunes += dataLifo;
+    }
+    binary *= 2;
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Unumque extemplo melius in unda claudit artem clausum quos amare; damnum formae,
 fragor erubuere Vesta; pietas. Guttura nova modo obstantis nitar et &lt;strong&gt;boves&lt;/strong&gt;;
 dixit paratibus tenera contiguas occupat &lt;strong&gt;seque casu&lt;/strong&gt;.&lt;/p&gt;</content:encoded><author>dev@completejavascript.com</author></item><item><title><![CDATA[Bold Mage]]></title><description><![CDATA[Lorem markdownum Ixione palus semper peritura barbaque in aureus
@@ -849,22 +852,23 @@ obliquum erigitur gemmae utque cur natus, aera supplice de nudae. Manus
 ambrosiam tendens, saecula tenet, conponere et ense et cucurri. Tantique
 animalia praeceps Meleagre greges venisse corpore et ignara, umquam ipse? Quam
 &lt;em&gt;Talibus ausis&lt;/em&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;sedisti-civiliter&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#sedisti-civiliter&quot; aria-label=&quot;sedisti civiliter permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Sedisti civiliter&lt;/h2&gt;
+&lt;h2&gt;Sedisti civiliter&lt;/h2&gt;
 &lt;p&gt;Lorem &lt;strong&gt;markdownum&lt;/strong&gt; Ixione palus &lt;strong&gt;semper peritura barbaque&lt;/strong&gt; in aureus
 obliquum erigitur gemmae utque cur natus, aera supplice de nudae. Manus
 ambrosiam tendens, saecula tenet, conponere et ense et cucurri. Tantique
 animalia praeceps Meleagre greges venisse corpore et ignara, umquam ipse? Quam
 &lt;em&gt;Talibus ausis&lt;/em&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;vultusque-subsequitur-pallas-regis-datis-inde-animaque&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#vultusque-subsequitur-pallas-regis-datis-inde-animaque&quot; aria-label=&quot;vultusque subsequitur pallas regis datis inde animaque permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Vultusque subsequitur Pallas regis datis inde animaque&lt;/h2&gt;
+&lt;h2&gt;Vultusque subsequitur Pallas regis datis inde animaque&lt;/h2&gt;
 &lt;p&gt;At securim cautum capitis, creatos sanguinis turbant iam concita videor, edere.
 Alis genas rudis felix quas &lt;strong&gt;longum&lt;/strong&gt; suorum manu ante prima &lt;strong&gt;usque&lt;/strong&gt;. Nec pro
 mea pariter, ictus iam consequitur capillos elegit ego; quoniam &lt;strong&gt;fuit&lt;/strong&gt;. Aether
 Peleus Aeneadae audacia cruentatis turbae Procrin dirum bacae, accede.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;php&quot;&gt;&lt;pre class=&quot;language-php&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;    urlLinkedin&lt;span class=&quot;token operator&quot;&gt;.&lt;/span&gt;midi_manet &lt;span class=&quot;token operator&quot;&gt;-=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;namespace&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;backsideKilobitBezel&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; ddr &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; storage_wordart_sdram&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    python&lt;span class=&quot;token operator&quot;&gt;.&lt;/span&gt;raw_backlink &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; rfid_load &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    kibibyte &lt;span class=&quot;token operator&quot;&gt;*=&lt;/span&gt; cdnThumbnailUri&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id=&quot;fortis-dextrae-humo-limina-tempus-singultibus-illa&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#fortis-dextrae-humo-limina-tempus-singultibus-illa&quot; aria-label=&quot;fortis dextrae humo limina tempus singultibus illa permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Fortis dextrae humo limina Tempus singultibus illa&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;    urlLinkedin.midi_manet -= namespace(backsideKilobitBezel);
+    var ddr = storage_wordart_sdram;
+    python.raw_backlink = rfid_load - 4;
+    kibibyte *= cdnThumbnailUri;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;Fortis dextrae humo limina Tempus singultibus illa&lt;/h2&gt;
 &lt;p&gt;Nate muros orbe &lt;a href=&quot;http://debebuntilla.org/res-ego&quot;&gt;patris&lt;/a&gt; rigent, nec tumida,
 pigra iuste At spretarumque latus et nostrum. Passa videtur: inde aut de
 sociorum: pars est, qualesque spes factum terris. Custodia sum animumque; iubet
@@ -873,17 +877,18 @@ vulneribus nostrae mollire erant ferrum habet loquiturque precibus expersque
 quam etiamnunc. Puraque &lt;a href=&quot;http://mihi-aiax.io/suaferunt.aspx&quot;&gt;repetitque&lt;/a&gt;,
 funestaque crebros mihi conubia matres insopitumque residunt rogat ponto canos
 ergo firmat albentia verba casuque.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;perl&quot;&gt;&lt;pre class=&quot;language-perl&quot;&gt;&lt;code class=&quot;language-perl&quot;&gt;    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;lion_vdu &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; vrml_upnp &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; redundancyAccessPharming&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-        driveProcessor &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; floatingWord&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;commerceDockRestore&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;database&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-        partition_source_thunderbolt &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; tokenStateArchive &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;
-                teraflops_gigahertz&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-    exabytePhpMacintosh &lt;span class=&quot;token operator&quot;&gt;-=&lt;/span&gt; graphic_cycle&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;expression&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; memory&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;ideFatMatrix&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-            controlInboxMode&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    buffer_apple_hdmi &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; viralSync &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; internetDigital &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; tweak_perl_expansion&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
-            masterNullFloating &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; vdu&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; software_play&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id=&quot;nati-expugnacior-nympha-milia-nascuntur-amico&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#nati-expugnacior-nympha-milia-nascuntur-amico&quot; aria-label=&quot;nati expugnacior nympha milia nascuntur amico permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Nati expugnacior nympha milia nascuntur amico&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-perl&quot;&gt;    if (lion_vdu + vrml_upnp - redundancyAccessPharming) {
+        driveProcessor = floatingWord(commerceDockRestore(database));
+    } else {
+        partition_source_thunderbolt = -2 + tokenStateArchive /
+                teraflops_gigahertz;
+    }
+    exabytePhpMacintosh -= graphic_cycle(expression, memory(ideFatMatrix,
+            controlInboxMode), 50) + -3;
+    buffer_apple_hdmi += viralSync + internetDigital / tweak_perl_expansion(
+            masterNullFloating + vdu, software_play);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;Nati expugnacior nympha milia nascuntur amico&lt;/h2&gt;
 &lt;p&gt;Multis timidus hic si auctor hausit. Suos taedasque, malis est nitente sceleri
 sunt florem.&lt;/p&gt;
 &lt;p&gt;Sub quid deprenderat mores postquam tectoque maiestatemque debebat quibus;
