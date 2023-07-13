@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[El Psy Kongroo]]></title><description><![CDATA[A GatsbyJS Blog Template for blogging purpose.]]></description><link>https://gb-template.netlify.com</link><image><url>https://gb-template.netlify.com/logos/logo-512x512.png</url><title>El Psy Kongroo</title><link>https://gb-template.netlify.com</link></image><generator>Gatsby Blog Template</generator><lastBuildDate>Thu, 13 Jul 2023 04:12:55 GMT</lastBuildDate><atom:link href="https://gb-template.netlify.com/rss.xml" rel="self" type="application/rss+xml"/><copyright><![CDATA[Copyright © 2019-2022 Lam Pham. Unless otherwise noted, all code MIT license.]]></copyright><item><title><![CDATA[[SudoCode]System Design Course p1-5 notes]]></title><description><![CDATA[Components Overview Logical Entities data,database, applications,cache, message queues, interface... Tangible Entities text,image,video.. mongodb,MySQL,... Java,Python... Redis…]]></description><link>https://gb-template.netlify.com/system-design-notes-1-5/</link><guid isPermaLink="false">https://gb-template.netlify.com/system-design-notes-1-5/</guid><category><![CDATA[proxy]]></category><category><![CDATA[server]]></category><category><![CDATA[data flow]]></category><pubDate>Mon, 03 Jul 2023 08:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Components Overview&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[El Psy Kongroo]]></title><description><![CDATA[A GatsbyJS Blog Template for blogging purpose.]]></description><link>https://gb-template.netlify.com</link><image><url>https://gb-template.netlify.com/logos/logo-512x512.png</url><title>El Psy Kongroo</title><link>https://gb-template.netlify.com</link></image><generator>Gatsby Blog Template</generator><lastBuildDate>Thu, 13 Jul 2023 04:37:15 GMT</lastBuildDate><atom:link href="https://gb-template.netlify.com/rss.xml" rel="self" type="application/rss+xml"/><copyright><![CDATA[Copyright © 2019-2022 Lam Pham. Unless otherwise noted, all code MIT license.]]></copyright><item><title><![CDATA[[SudoCode]System Design Course p1-5 notes]]></title><description><![CDATA[Components Overview Logical Entities data,database, applications,cache, message queues, interface... Tangible Entities text,image,video.. mongodb,MySQL,... Java,Python... Redis…]]></description><link>https://gb-template.netlify.com/system-design-notes-1-5/</link><guid isPermaLink="false">https://gb-template.netlify.com/system-design-notes-1-5/</guid><category><![CDATA[proxy]]></category><category><![CDATA[server]]></category><category><![CDATA[data flow]]></category><pubDate>Mon, 03 Jul 2023 08:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Components Overview&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Logical Entities
 &lt;ul&gt;
@@ -99,10 +99,10 @@ Multi tier example : youtube
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3&gt;Quiz&lt;/h3&gt;
-&lt;h2&gt;Data &amp;#x26; Data Flow&lt;/h2&gt;</content:encoded><author>dev@completejavascript.com</author></item><item><title><![CDATA[Backpack Problem]]></title><description><![CDATA[Category 01 Backpack 2D dynamic programming object\weight 0 1 2 object0    object1    object2    object3    dp[i][j] :  the total value when choosing between  object, reaching…]]></description><link>https://gb-template.netlify.com/backpack-problem/</link><guid isPermaLink="false">https://gb-template.netlify.com/backpack-problem/</guid><category><![CDATA[backpack problem]]></category><category><![CDATA[dynamic programming]]></category><pubDate>Mon, 02 Jul 2018 08:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Category&lt;/h2&gt;
+&lt;h2&gt;Data &amp;#x26; Data Flow&lt;/h2&gt;</content:encoded><author>dev@completejavascript.com</author></item><item><title><![CDATA[Backpack Problem]]></title><description><![CDATA[Category 01 Backpack 2D dynamic programming object\weight 0 1 2 object0    object1    object2    object3    dp[i][j] :  the total value when choosing between  object, reaching…]]></description><link>https://gb-template.netlify.com/backpack-problem/</link><guid isPermaLink="false">https://gb-template.netlify.com/backpack-problem/</guid><category><![CDATA[backpack problem]]></category><category><![CDATA[dynamic programming]]></category><pubDate>Mon, 02 Jul 2018 08:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;Category&lt;/h3&gt;
 &lt;img src=&quot;../images/leetcode/backpack/category.png&quot;&gt;
-&lt;h2&gt;01 Backpack&lt;/h2&gt;
-&lt;h3&gt;2D dynamic programming&lt;/h3&gt;
+&lt;h3&gt;01 Backpack&lt;/h3&gt;
+&lt;h4&gt;2D dynamic programming&lt;/h4&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -172,7 +172,7 @@ Multi tier example : youtube
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3&gt;1D Dynamic Programming&lt;/h3&gt;
+&lt;h4&gt;1D Dynamic Programming&lt;/h4&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Boundary Case:none, just initialize dp[i]=0&lt;/p&gt;
@@ -198,18 +198,18 @@ Multi tier example : youtube
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3&gt;Example Problems&lt;/h3&gt;
-&lt;h4&gt;416. Partition Equal Subset Sum&lt;/h4&gt;
+&lt;h4&gt;Example Problems&lt;/h4&gt;
+&lt;h5&gt;416. Partition Equal Subset Sum&lt;/h5&gt;
 &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/partition-equal-subset-sum/description/&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
-&lt;h4&gt;1049. Last Stone Weight II&lt;/h4&gt;
+&lt;h5&gt;1049. Last Stone Weight II&lt;/h5&gt;
 &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/last-stone-weight-ii/&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Take both value and weight to be stone weight&lt;/li&gt;
 &lt;li&gt;Try to split the stones to two parts with the closest weight sum(value)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4&gt;474. Ones and Zeros&lt;/h4&gt;
+&lt;h5&gt;474. Ones and Zeros&lt;/h5&gt;
 &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/ones-and-zeroes/&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
-&lt;h4&gt;494. Target Sum&lt;/h4&gt;
+&lt;h5&gt;494. Target Sum&lt;/h5&gt;
 &lt;p&gt;&lt;a href=&quot;https://leetcode.com/problems/target-sum/&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;HINT;
@@ -218,7 +218,7 @@ Multi tier example : youtube
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;Complete Backpack&lt;/h2&gt;
+&lt;h3&gt;Complete Backpack&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Different from 01 backpack, each item could be used for many times.&lt;/p&gt;
