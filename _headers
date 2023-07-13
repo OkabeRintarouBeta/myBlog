@@ -147,16 +147,6 @@
   Link: </myBlog/component---src-templates-page-template-jsx-d2e99b618fe09bf00b78.js>; rel=preload; as=script
   Link: </myBlog/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </myBlog/page-data/about/page-data.json>; rel=preload; as=fetch; crossorigin
-/myBlog/contact/
-  Link: </myBlog/webpack-runtime-a1b047817d5703bb211a.js>; rel=preload; as=script
-  Link: </myBlog/framework-6f3fdb5168e876dea49e.js>; rel=preload; as=script
-  Link: </myBlog/app-720875f5b37237cd48ae.js>; rel=preload; as=script
-  Link: </myBlog/cb1608f2-c0ce4c6af0d0a63f69ae.js>; rel=preload; as=script
-  Link: </myBlog/a9a7754c-4dc2ede88ccc68eff881.js>; rel=preload; as=script
-  Link: </myBlog/commons-ca92252e68185fd5454f.js>; rel=preload; as=script
-  Link: </myBlog/component---src-templates-page-template-jsx-d2e99b618fe09bf00b78.js>; rel=preload; as=script
-  Link: </myBlog/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </myBlog/page-data/contact/page-data.json>; rel=preload; as=fetch; crossorigin
 /myBlog/privacy/
   Link: </myBlog/webpack-runtime-a1b047817d5703bb211a.js>; rel=preload; as=script
   Link: </myBlog/framework-6f3fdb5168e876dea49e.js>; rel=preload; as=script
@@ -187,6 +177,16 @@
   Link: </myBlog/component---src-templates-page-template-jsx-d2e99b618fe09bf00b78.js>; rel=preload; as=script
   Link: </myBlog/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </myBlog/page-data/terms/page-data.json>; rel=preload; as=fetch; crossorigin
+/myBlog/contact/
+  Link: </myBlog/webpack-runtime-a1b047817d5703bb211a.js>; rel=preload; as=script
+  Link: </myBlog/framework-6f3fdb5168e876dea49e.js>; rel=preload; as=script
+  Link: </myBlog/app-720875f5b37237cd48ae.js>; rel=preload; as=script
+  Link: </myBlog/cb1608f2-c0ce4c6af0d0a63f69ae.js>; rel=preload; as=script
+  Link: </myBlog/a9a7754c-4dc2ede88ccc68eff881.js>; rel=preload; as=script
+  Link: </myBlog/commons-ca92252e68185fd5454f.js>; rel=preload; as=script
+  Link: </myBlog/component---src-templates-page-template-jsx-d2e99b618fe09bf00b78.js>; rel=preload; as=script
+  Link: </myBlog/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </myBlog/page-data/contact/page-data.json>; rel=preload; as=fetch; crossorigin
 /myBlog/tag/proxy/
   Link: </myBlog/webpack-runtime-a1b047817d5703bb211a.js>; rel=preload; as=script
   Link: </myBlog/framework-6f3fdb5168e876dea49e.js>; rel=preload; as=script
